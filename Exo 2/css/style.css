@@ -1,0 +1,108 @@
+/* 
+=====================================================
+======================== ALL ========================
+=====================================================
+ */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin : 0;
+}
+
+#wrapper{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background: hsl(207, 29%, 73%);
+    gap: 20px;
+}
+
+/* 
+=====================================================
+======================== MAIN =======================
+=====================================================
+ */
+
+
+main{
+     text-align: center;
+ }
+
+h1{
+    font-size: 50px;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+#count{
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+#btn{
+    margin-bottom: 20px;
+}
+
+#todoCards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.todoCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-wrap:balance;
+    gap: 20px;
+    background-color: white;
+    max-width: 600px;
+    border: solid;
+    transition: 0.5s;
+}
+
+.todoCardComplet{
+    background-color: rgb(40, 136, 20);
+}
+
+.todoCard p{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.delBtn{
+    margin-bottom: 10px;
+}
+
+/*
+=====================================================
+======================= MEDIA =======================
+=====================================================
+ */
+
+
+ @media only screen and (max-width: 400px) {
+
+    #wrapper{
+        background: hsl(207, 46%, 58%);
+    }
+
+/* 
+=====================================================
+======================== MAIN =======================
+=====================================================
+ */
+
+ .todoCard{
+    width: auto;
+    margin: 0% 5%;
+}
+
+}
